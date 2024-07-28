@@ -21,11 +21,12 @@ def calculate_letter_grade(average):
         return 'D', 1.0
     else:
         return 'F', 0.0
+
 def get_grades():
     grades = []
     while True:
         try:
-            grade = float(input("Enter a grade (or type 'done' to finish): "))
+            grade = float(input("Enter marks (or type 'done' to finish): "))
             if 0 <= grade <= 100:
                 grades.append(grade)
             else:
