@@ -10,18 +10,6 @@
 <B>Mentor:</B>Srvavani Gouni<br>
 <h1>Project Overview</h1><br>
 <h2>Sample code:</h2>
-
-
-
-
-
-
-
-
-
-
-
-
 def calculate_letter_grade(average):
     if average >= 90:
         return 'A', 4.0
