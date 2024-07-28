@@ -21,7 +21,6 @@ def calculate_letter_grade(average):
         return 'D', 1.0
     else:
         return 'F', 0.0
-
 def get_grades():
     grades = []
     while True:
