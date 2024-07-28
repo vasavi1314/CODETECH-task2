@@ -1,0 +1,52 @@
+def calculate_letter_grade(average):
+    if average >= 90:
+        return 'A', 4.0
+    elif average >= 80:
+        return 'B', 3.0
+    elif average >= 70:
+        return 'C', 2.0
+    elif average >= 60:
+        return 'D', 1.0
+    else:
+        return 'F', 0.0
+
+def get_grades():
+    grades = []
+    while True:
+        try:
+            grade = float(input("Enter marks (or type 'done' to finish): "))
+            if 0 <= grade <= 100:
+                grades.append(grade)
+            else:
+                print("Please enter a grade between 0 and 100.")
+        except ValueError:
+            break
+    return grades
+
+def calculate_average(grades):
+    if grades:
+        return sum(grades) / len(grades)
+    else:
+        return 0
+
+def main():
+    print("Student Grade Tracker")
+    print("---------------------")
+
+    grades = get_grades()
+    if not grades:
+        print("No grades entered.")
+        return
+
+    average = calculate_average(grades)
+    letter_grade, gpa = calculate_letter_grade(average)
+
+    print("\nGrade Summary")
+    print("-------------")
+    print(f"Grades Entered: {grades}")
+    print(f"Average Grade: {average:.2f}")
+    print(f"Letter Grade: {letter_grade}")
+    print(f"GPA: {gpa:.2f}")
+
+if __name__ == "__main__":
+    main()
