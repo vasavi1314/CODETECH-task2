@@ -10,6 +10,7 @@
 <B>Mentor:</B>Srvavani Gouni<br>
 <h1>Project Overview</h1><br>
 <h2>Sample code:</h2>
+<pre>
 def calculate_letter_grade(average):
     if average >= 90:
         return 'A', 4.0
@@ -44,7 +45,6 @@ def calculate_average(grades):
 def main():
     print("Student Grade Tracker")
     print("---------------------")
-
     grades = get_grades()
     if not grades:
         print("No grades entered.")
@@ -60,9 +60,9 @@ def main():
     print(f"Letter Grade: {letter_grade}")
     print(f"GPA: {gpa:.2f}")
 
-if __name__ == "__main__":
+if name == "main":
     main()
-
+</pre>
 <h1>Output</h1><br>
 
 ![image](https://github.com/user-attachments/assets/3ffe4d15-0df4-4bd5-b1c8-1cccd677dbcf)
@@ -73,28 +73,26 @@ The objective of developing a Python program to track and manage student grades 
 Input and Store Grades: Allow users to input grades for different subjects or assignments.
 Calculate Average Grade: Compute the average grade across all subjects or assignments.
 Determine Overall Grade: Display the overall grade, including letter grade and GPA.
-Provide Insights: Offer additional information such as letter grades and GPA to help students understand their academic performance.
-<h1>Explanation:</b></h1>
+Provide Insights: Offer additional information such as letter grades and GPA to help students understand their academic performance.</br>
 
 
-StudentGrades Class:
+<h1>Explanation:</h1>
 
-__init__: Initializes an empty dictionary to store grades.<br>
+
+<b>StudentGrades Class:</b>
+
+init: Initializes an empty dictionary to store grades.<br>
 add_grade: Adds a grade for a specific subject.<br>
 calculate_average: Computes the average of the grades.<br>
 determine_letter_grade: Determines the letter grade based on the average.<br>
 determine_gpa: Determines the GPA based on the letter grade.<br>
 display_overall_grade: Displays the average grade, letter grade, and GPA.<br>
-display_grades: Displays all the grades entered.<br>
-<b><h1>main Function:<b><h1>
+display_grades: Displays all the grades entered.<br><br>
+
+
+<b><h1>main Function:</h1></b>
 Provides a menu-driven interface for users to add grades, display grades, and display overall grades.<br>
 Users can add grades for different subjects, view all entered grades, or calculate and display the overall grade with corresponding letter grade and GPA.<br>
 This program allows users to efficiently manage and track student grades, providing clear insights into academic performance.<br>
 <h1><b>Conclusion</b></h1>
-Developing a Python program to track and manage student grades offers a practical solution for students and educators seeking to streamline the process of grade management. The program provides a user-friendly interface for inputting grades, calculating averages, and determining overall performance through letter grades and GPA. This tool not only ensures accuracy and consistency in grade calculations but also enhances transparency and provides valuable insights into academic achievements.
-
-
-
-
-
-
+Developing a Python program to track and manage student grades offers a practical solution for students and educators seeking to streamline the process of grade management. The program provides a user-friendly interface for inputting grades, calculating averages, and determining overall performance through letter grades and GPA. This tool not only ensures accuracy and consistency in grade calculations but also enhances transparency and provides valuable insights into academic achievements.# CODTECH-TASK2
